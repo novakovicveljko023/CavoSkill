@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f3f6fb;
+    color: #1f2937;
+}
+
+/* TOP BAR */
+.top-bar {
+    height: 70px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo img {
+    height: 90px;
+}
+
+.top-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.top-actions input {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    background: linear-gradient(180deg, #1e3a8a, #1e40af);
+    min-height: calc(100vh - 70px);
+    padding-top: 30px;
+    color: white;
+   
+}
+
+.sidebar ul {
+    list-style: none;
+     color: white;
+}
+
+.sidebar li {
+    padding: 14px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar li.active {
+    background: rgba(255,255,255,0.15);
+    font-weight: 600;
+    color: white;
+}
+.sidebar a{
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover{
+    color: white;
+}
+
+.sidebar .active a{
+    color: white;
+    font-weight: 600;
+}
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* HERO */
+.hero {
+    max-width: 720px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #475569;
+    margin-bottom: 16px;
+}
+
+.btn-accent {
+    background: #f59e0b;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* COURSES */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.course-card {
+    background: white;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.course-image {
+    width: 100%;
+    height: 140px;
+    background: #e5e7eb;
+    border-radius: 14px;
+    margin-bottom: 14px;
+}
+
+.course-card h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.btn-secondary {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* LOGIN PAGE */
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3f6fb, #eef2f7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 420px;
+    background: #ffffff;
+    padding: 36px 32px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+/* LOGO */
+.login-logo img {
+    height: 90px;
+    margin-bottom: 16px;
+}
+
+/* NASLOV */
+.login-card h1 {
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.login-subtitle {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 26px;
+}
+
+/* FORMA */
+.login-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* DUGME */
+.full-width {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* DIVIDER */
+.login-divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 22px 0;
+}
+
+/* REGISTRACIJA */
+.register-text {
+    font-size: 14px;
+    color: #475569;
+}
+
+.register-text a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* USER AREA (ULOGOVANI KORISNIK) */
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-name {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* STATUS KURSA */
+.course-status {
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.course-status.completed {
+    color: #16a34a;
+    font-weight: 600;
+}
+/* PROFIL */
+.profile-section {
+    max-width: 700px;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    width: 64px;
+    height: 64px;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-header h2 {
+    margin-bottom: 4px;
+}
+
+.profile-email {
+    font-size: 14px;
+    color: #475569;
+}
+
+/* FORM */
+.profile-form .form-group {
+    margin-bottom: 18px;
+}
+
+.profile-form label {
+    display: block;
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.profile-form input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* SERTIFIKATI */
+.course-status {
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.course-status.completed {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+/* DISABLED BUTTON */
+.btn-secondary.disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+/* O NAMA */
+.about-section {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.about-card {
+    background: white;
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.about-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+}
+/* KONTAKT */
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+}
+
+.contact-card {
+    background: white;
+    padding: 26px;
+    border-radius: 18px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.contact-card h2 {
+    margin-bottom: 16px;
+}
+
+/* FORMA */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* MAPA */
+.map-placeholder {
+    width: 100%;
+    height: 260px;
+    background: #e5e7eb;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    font-size: 14px;
+}
